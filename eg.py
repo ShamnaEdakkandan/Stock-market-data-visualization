@@ -24,13 +24,13 @@ def stock_data():
     return prices, volumes
 
 def graphs(data):
-    data["Price Change"]=data["Price"].diff()
-    plt.plot(data["Day"],data["Price Change"])
-    plt.xlabel("Day")
-    plt.ylabel("Change")
-    plt.title("Daily Price Change")
-    plt.show()
-    plt.figure(figsize=(10,6))
+    # data["Price Change"]=data["Price"].diff()
+    # plt.plot(data["Day"],data["Price Change"])
+    # plt.xlabel("Day")
+    # plt.ylabel("Change")
+    # plt.title("Daily Price Change")
+    # plt.show()
+    # plt.figure(figsize=(10,6))
 
     plt.subplot(2,1,1)
     plt.plot(data["Day"], data["Price"],color="blue")
